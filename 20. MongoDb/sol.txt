@@ -1,0 +1,16 @@
+1. What is a Schema in MongoDB?
+MongoDB is schema-less, meaning it doesn’t require a predefined structure for documents in a collection.
+However, schemas are often used with ODMs like Mongoose to define and enforce consistent structures for documents.
+A schema in MongoDB specifies:
+The fields and their data types.
+Validation rules.
+Default values and other field constraints.
+2. Defining and Enforcing Schemas Using Mongoose
+Defining Schemas: Mongoose allows developers to define schemas using its Schema class. You define fields, their types, and optional constraints like required fields or default values.
+Enforcing Schemas: When a schema is associated with a Mongoose model, documents created or updated using that model must adhere to the schema.
+3.Create a Database:
+MongoDB automatically creates a database when you first use it (e.g., insert a document).
+Drop a Database:
+Use the db.dropDatabase() command to delete a database.
+4.Create a Collection: Use db.createCollection() or insert a document into a non-existent collection.
+Drop a Collection: Use db.collection.drop() to remove it.

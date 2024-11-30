@@ -1,0 +1,32 @@
+/* Styling to make the boxes overlap */
+.box1, .box2, .box3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+  }
+  
+  .box1 {
+    background-color: red;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* This box will be at the bottom */
+  }
+  
+  .box2 {
+    background-color: green;
+    top: 40px;
+    left: 40px;
+    z-index: 2; /* This box will be in the middle */
+  }
+  
+  .box3 {
+    background-color: blue;
+    top: 60px;
+    left: 60px;
+    z-index: 3; /* This box will be on top */
+  }
+  

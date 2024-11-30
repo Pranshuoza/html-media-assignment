@@ -1,0 +1,8 @@
+Synchronous Operations
+Execute tasks one at a time, in a blocking manner.
+The execution of the next task waits until the current one completes.
+Can lead to performance issues in I/O-heavy applications.
+Asynchronous Operations
+Execute tasks in a non-blocking manner.
+Allow other operations to continue while waiting for a task (e.g., I/O) to complete.
+Typically use callbacks, Promises, or async/await.

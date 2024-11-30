@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #0d89d6; 
+    padding: 10px 20px; 
+}
+
+.nav-links {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-links li {
+    margin: 0 15px; 
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: color 0.3s; 
+    border: 2px solid transparent; 
+}
+ 
+.style1 a {
+    border: 2px solid #08fc45; 
+}
+
+.style2 a {
+    border: 2px dashed #08fc45; 
+}
+
+.style3 a {
+    border: 2px dotted #08fc45; 
+}
+
+.style4 a {
+    border: 2px double #08fc45; 
+}
+
+.style5 a {
+    border: 2px groove #08fc45; 
+}

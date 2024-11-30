@@ -1,0 +1,6 @@
+Event Delegation is a technique in JavaScript where a single event listener is added to a parent element to handle events on its child elements. This leverages event bubbling, where events propagate from child to parent elements.
+
+Benefits:
+Performance: Reduces the number of event listeners, especially for dynamically created elements.
+Dynamic Elements: Automatically handles events for elements added dynamically after the listener is set.
+Simplified Code: Centralizes event handling logic.

@@ -1,0 +1,41 @@
+1. useState
+Manages state in a functional component.
+Returns the current state and a function to update it.
+Example:
+
+javascript
+Copy code
+import React, { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0); // Initialize state with 0
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+2. useEffect
+Performs side effects like fetching data, subscriptions, or directly updating the DOM.
+Can replace lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+Example:
+
+javascript
+Copy code
+import React, { useState, useEffect } from "react";
+
+function Timer() {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds((prev) => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(interval); // Cleanup function
+  }, []); // Empty dependency array means this runs only once
+
+  return <p>Seconds elapsed: {seconds}</p>;
+}

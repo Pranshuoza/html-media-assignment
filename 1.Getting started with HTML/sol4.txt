@@ -1,0 +1,9 @@
+In HTML, tags and elements are essential components for building web content. 
+A tag is a keyword enclosed within angle brackets, like <p>, which marks the start and
+end of an HTML element, defining the type of content it represents. Tags usually come in pairs,
+with an opening tag (e.g., <p>) and a corresponding closing tag (e.g., </p>), where the closing 
+tag has a forward slash to signify the end. An element, on the other hand, is the complete structure
+consisting of the opening tag, the content, and the closing tag, giving the content its defined 
+purpose and structure within the document. For example, in `<p>This is a paragraph element.</p>`, 
+<p> is the opening tag, </p> is the closing tag, and together, they form a paragraph element that
+ contains the text "This is a paragraph element."

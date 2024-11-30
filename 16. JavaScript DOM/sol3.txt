@@ -1,0 +1,1 @@
+Event Bubbling is the process where an event triggered on a child element propagates up through its ancestors in the DOM hierarchy. For example, if a button inside a div is clicked, the click event first happens on the button and then bubbles up to the div, and so on, up to the root.

@@ -1,0 +1,13 @@
+In CSS, absolute and relative positioning are two different ways to control how elements are placed
+on a webpage. Relative positioning means an element is positioned relative to its original place 
+in the document flow. When you apply `top`, `right`, `bottom`, or `left` properties to a relatively positioned
+element, it moves based on its original position without affecting other elements around it. The
+element still occupies its original space, so the layout doesn’t shift, and there’s a “gap”
+in its original location. 
+
+On the other hand, absolute positioning means an element is positioned relative to its closest positioned 
+ancestor (i.e., an ancestor with a `position` value other than `static`). If no such ancestor exists,
+the element is positioned relative to the initial containing block, usually the viewport. An absolutely positioned
+element is completely removed from the document flow, so it doesn’t occupy space and can overlap with other elements. This type of positioning allows for more precise control of placement, but can lead to overlapping
+issues if not managed carefully. Both positioning types are often used together to create complex layouts where elements
+need specific placements.

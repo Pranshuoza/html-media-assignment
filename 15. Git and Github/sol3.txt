@@ -1,0 +1,5 @@
+A .gitignore file specifies files or directories that Git should ignore. This is crucial for version control because:
+
+It prevents unnecessary files (e.g., logs, environment files, compiled binaries) from being added to the repository.
+It reduces repository size and improves performance.
+It protects sensitive information (e.g., API keys) from being accidentally shared.

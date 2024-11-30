@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Styling Demonstration</title>
+  
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style1.css">
+
+  <!-- Internal CSS for additional styling -->
+  <style>
+    /* Internal CSS */
+    
+    /* This will apply a light green background to all divs */
+    div {
+      background-color: lightgreen;
+    }
+
+    /* Targeting the div with ID "internal-style" */
+    #internal-style {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Targeting divs with class "styled-div" */
+    .styled-div {
+      border: 2px dashed green;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Styling Demo</h1>
+
+  <!-- Inline CSS Example -->
+  <div id="inline-style" style="background-color: lightblue; color: darkblue; padding: 15px;">
+    This div is styled with inline CSS. Inline CSS overrides both internal and external CSS for the same properties.
+  </div>
+
+  <!-- Internal CSS Example -->
+  <div id="internal-style">
+    This div is styled by internal CSS. Internal CSS overrides external CSS but is overridden by inline CSS.
+  </div>
+
+  <!-- External CSS Example -->
+  <div id="external-style">
+    This div is styled by external CSS. It will only show styles from external CSS unless overridden by internal or inline CSS.
+  </div>
+
+  <!-- Combining all styles -->
+  <div class="styled-div" style="color: purple; font-weight: bold;">
+    This div combines inline, internal, and external CSS. Notice which styles take precedence based on the order of application:
+  </div>
+
+</body>
+</html>

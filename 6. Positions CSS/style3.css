@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 800px;
+    height: auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;    
+    background-color: rgb(222, 175, 121);
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-right: auto;
+    margin-top: 5em;
+    border-radius: 8px;
+}
+
+.paragraph {
+    margin: 0;
+    width: 600px;
+    height: auto;
+}
+
+.h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}

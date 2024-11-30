@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Section</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f2f5;
+    }
+
+    /* Container styling */
+    .pricing-container {
+      display: flex;
+      gap: 20px;
+      max-width: 1000px;
+    }
+
+    /* Individual pricing card styling */
+    .pricing-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+    }
+
+    /* Plan type and price styling */
+    .plan-type {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    /* Feature list styling */
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .features li {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    /* Button styling */
+    .subscribe-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Styling for specific plans */
+    .basic-plan {
+      background-color: #1e2a3b;
+      color: #fff;
+    }
+    .basic-plan .subscribe-btn {
+      background-color: #1e2a3b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pricing-container">
+    <!-- Free Plan -->
+    <div class="pricing-card">
+      <div class="plan-type">Free Plan</div>
+      <div class="price">$0</div>
+      <ul class="features">
+        <li>1 User</li>
+        <li>4 Web mails</li>
+        <li>Responsive Website</li>
+        <li>Free SSL</li>
+      </ul>
+      <a href="#" class="subscribe-btn">Subscribe now</a>
+    </div>
+
+    <!-- Basic Plan -->
+    <div class="pricing-card basic-plan">
+      <div class="plan-type">Basic Plan</div>
+      <div class="price">$29</div>
+      <ul class="features">
+        <li>4 Users</li>
+        <li>10 Web mails</li>
+        <li>Responsive Website</li>
+        <li>Free SSL</li>
+      </ul>
+      <a href="#" class="subscribe-btn">Subscribe now</a>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="pricing-card">
+      <div class="plan-type">Pro Plan</div>
+      <div class="price">$49</div>
+      <ul class="features">
+        <li>Unlimited users</li>
+        <li>Unlimited Web mails</li>
+        <li>Responsive Website</li>
+        <li>Free SSL + SEO</li>
+      </ul>
+      <a href="#" class="subscribe-btn">Subscribe now</a>
+    </div>
+  </div>
+
+</body>
+</html>

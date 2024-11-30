@@ -1,0 +1,6 @@
+GitHub is a web-based platform for hosting Git repositories. It facilitates collaboration and version control through features like:
+
+Pull Requests: Review and merge code changes.
+Issue Tracking: Manage bugs and tasks.
+Branching: Work on different features simultaneously.
+Access Control: Define who can view or modify the code.

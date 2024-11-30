@@ -1,0 +1,7 @@
+The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects. Each element in the document (like tags, attributes, and text) is represented as a node in the DOM tree.
+
+Role in Web Development:
+Dynamic Content Manipulation: Developers can use the DOM to modify HTML elements, styles, and content dynamically.
+Event Handling: Interactions like clicks, form submissions, or mouse movements can be managed using DOM methods.
+Traversal and Navigation: The DOM allows traversing and accessing elements in the document hierarchy.
+Integration with JavaScript: JavaScript interacts with the DOM to enable dynamic and interactive web pages.

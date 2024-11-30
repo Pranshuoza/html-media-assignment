@@ -1,0 +1,8 @@
+Difference Between em and px Using Create-React-App Example
+Pixel (px):
+A fixed unit of measurement.
+Does not scale with the parent or viewport.
+Ideal for elements where fixed dimensions are needed.
+Em:
+A relative unit that scales based on the font size of its nearest parent element.
+Useful for creating responsive designs where elements scale proportionally.

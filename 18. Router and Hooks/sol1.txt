@@ -1,0 +1,53 @@
+Hooks are functions introduced in React 16.8 that allow developers to use state and other React features in functional components. Before hooks, state and lifecycle methods were only available in class components.
+
+Key Features of Hooks
+No Need for Classes: Hooks enable developers to use state and lifecycle features without writing a class.
+
+Reusability: Hooks allow logic to be reused between components without restructuring the component hierarchy (e.g., through custom hooks).
+
+Cleaner Code: Functional components with hooks often result in more readable and concise code.
+
+Backward Compatibility: Hooks are fully backward-compatible, meaning existing class-based components will continue to work.
+
+Commonly Used React Hooks
+1. useState
+Manages state in a functional component.
+Returns the current state and a function to update it.
+Example:
+
+javascript
+Copy code
+import React, { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0); // Initialize state with 0
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+2. useEffect
+Performs side effects like fetching data, subscriptions, or directly updating the DOM.
+Can replace lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+Example:
+
+javascript
+Copy code
+import React, { useState, useEffect } from "react";
+
+function Timer() {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds((prev) => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(interval); // Cleanup function
+  }, []); // Empty dependency array means this runs only once
+
+  return <p>Seconds elapsed: {seconds}</p>;
+}

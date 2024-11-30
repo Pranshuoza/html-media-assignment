@@ -1,0 +1,24 @@
+body {
+    margin: 0;  
+    background-color:whitesmoke; 
+}
+
+header {
+    color: black; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.container {
+    max-width: 750px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: white; 
+    border-radius: 8px; 
+}
+
+.team-image {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}

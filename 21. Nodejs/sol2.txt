@@ -1,0 +1,11 @@
+Modules in Node.js are reusable pieces of code that can be exported and imported into other files. Node.js follows a modular design where each file in a Node.js application is treated as a separate module.
+
+Types of Modules
+Core Modules: Built into Node.js, such as http, fs, path, and os.
+User-Defined Modules: Custom modules created by developers.
+Third-Party Modules: Installed via npm (e.g., express, lodash).
+Importance of Modules
+Code Reusability: Modules allow developers to write code once and use it in multiple places.
+Maintainability: By splitting code into modules, applications become easier to manage and debug.
+Scalability: Modular design supports larger and more complex applications.
+Community Support: npm provides access to thousands of open-source modules.

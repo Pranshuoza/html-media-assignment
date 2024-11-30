@@ -1,0 +1,27 @@
+Node.js is a runtime environment for executing JavaScript on the server side. Built on Chrome's V8 JavaScript engine, it allows developers to write server-side applications using JavaScript.
+
+Features of Node.js
+Non-blocking I/O: Handles multiple requests concurrently without blocking the main thread.
+Single-threaded Event Loop: Uses a single thread to handle many connections asynchronously.
+Cross-Platform: Runs on Windows, macOS, and Linux.
+Primary Use Cases
+Web Servers:
+
+Build scalable web servers with frameworks like Express.js.
+Example: REST APIs for web and mobile applications.
+Real-Time Applications:
+
+Ideal for chat apps, multiplayer games, and collaboration tools (e.g., Slack, Trello).
+Example: WebSocket-based communication.
+Microservices:
+
+Suitable for building distributed and microservice-based architectures.
+Example: Modularizing business logic in large-scale applications.
+Command-Line Tools:
+
+Create CLI tools with access to file systems and network resources.
+Example: Build tools like Webpack.
+Streaming Applications:
+
+Efficiently handle data streams for video, audio, or large file uploads.
+Example: Streaming platforms like Netflix.

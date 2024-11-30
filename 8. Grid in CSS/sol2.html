@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Arrangement</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffffee;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 600px 300px; 
+    grid-template-rows: 200px 200px; 
+    gap: 10px; 
+    width: 910px; 
+    margin: 20px auto; 
+}
+
+.box {
+    background-color: #f0e9c5; 
+    color: rgb(0, 0, 0);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.A {
+    grid-column: 1 / 2; 
+    grid-row: 1; 
+    height: 200px; 
+    width: 600px; 
+}
+
+.B {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2; 
+    height: 410px; 
+    width: 300px; 
+}
+
+.C {
+    grid-column: 1 ; 
+    grid-row: 2; 
+    height: 200px; 
+    width: 295px; 
+}
+
+.D {
+    grid-column: 1; 
+    grid-row: 2; 
+    height: 200px; 
+    width: 295px; 
+    justify-self: end; 
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box A">A</div>
+        <div class="box B">B</div>
+        <div class="box C">C</div>
+        <div class="box D">D</div>
+    </div>
+</body>
+
+</html>

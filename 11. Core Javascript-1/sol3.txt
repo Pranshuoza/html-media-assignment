@@ -1,0 +1,86 @@
+Loops in JavaScript are control structures that allow you to execute a block of code multiple
+times based on certain conditions. They are useful for tasks such as iterating over arrays, executing 
+a block of code repeatedly, or automating repetitive tasks.
+
+1. `for` loop  
+   A general-purpose loop that repeats based on a condition.  
+   Syntax:
+   javascript
+   for (initialization; condition; increment/decrement) {
+       // Code to execute
+   }
+   
+   Example:
+   javascript
+   for (let i = 0; i < 5; i++) {
+       console.log("Iteration number:", i);
+   }
+   
+   
+
+2. `while` loop  
+   Executes a block of code as long as the condition is true.  
+   Syntax:
+   javascript
+   while (condition) {
+       // Code to execute
+   }
+   
+   Example:
+   javascript
+   let count = 0;
+   while (count < 3) {
+       console.log("Count is:", count);
+       count++;
+   }
+   
+   
+
+3. `do...while` loop  
+   Similar to `while` but ensures the block of code runs at least once before checking the condition.  
+   Syntax:
+   javascript
+   do {
+       // Code to execute
+   } while (condition);
+   
+   Example:
+   javascript
+   let number = 0;
+   do {
+       console.log("Number is:", number);
+       number++;
+   } while (number < 2);
+   
+
+4. `for...of` loop  
+   Iterates over iterable objects like arrays or strings.  
+   Syntax:
+   javascript
+   for (variable of iterable) {
+       // Code to execute
+   }
+   
+   Example:
+   javascript
+   const colors = ["red", "green", "blue"];
+   for (let color of colors) {
+       console.log(color);
+   }
+   
+   
+
+5. `for...in` loop  
+   Iterates over the enumerable properties of an object.  
+   Syntax:
+   javascript
+   for (key in object) {
+       // Code to execute
+   }
+
+   Example:
+   const person = { name: "Alice", age: 25 };
+   for (let key in person) {
+       console.log(`${key}: ${person[key]}`);
+   }
+   

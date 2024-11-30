@@ -1,0 +1,21 @@
+The Git workflow consists of three main areas:
+
+Working Directory:
+
+The local folder where you make changes to your files.
+Changes made here are untracked or modified until staged.
+Staging Area (Index):
+
+A temporary area where changes are listed for the next commit.
+Files must be added to the staging area before committing.
+Command: git add <file>
+Repository:
+
+The database where all committed changes are stored permanently.
+Once changes are committed, they move from the staging area to the repository.
+Command: git commit -m "message"
+Workflow Example:
+
+Modify a file in the working directory.
+Stage the file using git add.
+Commit the changes to the repository using git commit.

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRCTC Ticket Booking Page Clone</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Container styling */
+    .booking-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Header styling */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header img {
+      width: 50px;
+    }
+
+    .header h1 {
+      font-size: 1.5em;
+      margin: 0;
+      color: #333;
+    }
+
+    .header p {
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 4px;
+    }
+
+    /* Form styling */
+    .booking-form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 0.9em;
+    }
+
+    /* Button styling */
+    .search-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .search-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="booking-container">
+    <!-- Header Section -->
+    <div class="header">
+      <img src=" " alt="IRCTC Logo">
+      <div>
+        <h1>Indian Railways</h1>
+        <p>Safety | Security | Punctuality</p>
+      </div>
+    </div>
+
+    <!-- Booking Form -->
+    <form class="booking-form">
+      <!-- From Location -->
+      <div class="input-group">
+        <label for="from">From</label>
+        <input type="text" id="from" name="from" placeholder="Enter origin station">
+      </div>
+
+      <!-- To Location -->
+      <div class="input-group">
+        <label for="to">To</label>
+        <input type="text" id="to" name="to" placeholder="Enter destination station">
+      </div>
+
+      <!-- Date of Journey -->
+      <div class="input-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+      </div>
+
+      <!-- Class Selection -->
+      <div class="input-group">
+        <label for="class">Class</label>
+        <select id="class" name="class">
+          <option value="1A">1A</option>
+          <option value="2A">2A</option>
+          <option value="3A">3A</option>
+          <option value="SL">Sleeper (SL)</option>
+          <option value="2S">2S</option>
+        </select>
+      </div>
+
+      <!-- Quota Selection -->
+      <div class="input-group">
+        <label for="quota">Quota</label>
+        <select id="quota" name="quota">
+          <option value="general">General</option>
+          <option value="tatkal">Tatkal</option>
+          <option value="ladies">Ladies</option>
+          <option value="senior">Senior Citizen</option>
+        </select>
+      </div>
+
+      <!-- Search Button -->
+      <button type="submit" class="search-button">Search Train</button>
+    </form>
+  </div>
+
+</body>
+</html>
